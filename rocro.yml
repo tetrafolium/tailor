@@ -12,7 +12,7 @@ inspecode:
   cpd:
     options:
       --skip-lexical-errors:
-    thresholds: { num-issues: 999 }
+    thresholds: { num-issues: 22 }
 
   grep:
     thresholds: { num-issues: 17 }
