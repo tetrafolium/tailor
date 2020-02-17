@@ -5,6 +5,8 @@ inspecode:
     thresholds: { num-issues: 71 }
 
   checkstyle:
+    config-file: .checkstyle/google_checks.xml
+      # copy from https://github.com/checkstyle/checkstyle/blob/master/src/main/resources/google_checks.xml
     auto-fix: true
     thresholds: { num-issues: 999 }   # FIXME: too many issues detected: 4453 > 1000
 
@@ -34,6 +36,7 @@ inspecode:
     thresholds: { num-issues: 0 }
 
   swiftlint:
+    #config-file: .swiftlint.yml   # (auto-detect)
     auto-fix: true
     thresholds: { num-issues: 999 }
 
