@@ -39,8 +39,12 @@ inspecode:
     auto-fix: true
     thresholds: { num-issues: 588 }
 
-  tailor:
-    thresholds: { num-issues: 999 }
+  ##----------------------------------------------------------------
+  ##  $ JAVA_OPTS="-Xms240m -Xmx1680m" tailor --format=json .
+  ##  Exception in thread "main" java.lang.NullPointerException
+  ##----------------------------------------------------------------
+  #tailor:
+  #  thresholds: { num-issues: 999 }
 
   uncrustify:
     auto-fix: true
