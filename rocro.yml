@@ -40,8 +40,6 @@ inspecode:
     thresholds: { num-issues: 588 }
 
   tailor:
-    ignore:
-    - src/test/swift/com/sleekbyte/tailor/functional/ViolationSuppressorTest.swift
     thresholds: { num-issues: 999 }
 
   uncrustify:
