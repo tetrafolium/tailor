@@ -24,7 +24,7 @@ inspecode:
   #  thresholds: { num-issues: 999 }
 
   jscpd:
-    thresholds: { num-issues: 0 }
+    thresholds: { num-issues: 131 }
 
   misspell:
     auto-fix: true
@@ -37,7 +37,7 @@ inspecode:
   swiftlint:
     #config-file: .swiftlint.yml      # (auto-detect)
     auto-fix: true
-    thresholds: { num-issues: 588 }
+    thresholds: { num-issues: 626 }
 
   tailor:
     thresholds: { num-issues: 999 }
