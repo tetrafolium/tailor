@@ -30,9 +30,9 @@ class Snake_Case {
   var x: String
 }
 
-// tailor:on
+// tailor:off
 class UppCamelCase: superClass {
   var foo: Int
   var bar: String
 }
-// tailor:off
+// tailor:on
