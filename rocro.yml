@@ -9,10 +9,20 @@ inspecode:
     auto-fix: true
     thresholds: { num-issues: 848 }
 
+  clang-format:
+    auto-fix: true
+    thresholds: { num-issues: 999 }
+
   cpd:
     options:
       --skip-lexical-errors:
     thresholds: { num-issues: 22 }
+
+  # fortify:
+  #   thresholds: { num-issues: 999 }
+
+  fossology:
+    thresholds: { num-issues: 999 }
 
   grep:
     thresholds: { num-issues: 17 }
@@ -34,13 +44,19 @@ inspecode:
     auto-fix: true
     thresholds: { num-issues: 0 }
 
+  spotbugs:
+    thresholds: { num-issues: 999 }
+
   swiftlint:
     #config-file: .swiftlint.yml      # (auto-detect)
     auto-fix: true
     thresholds: { num-issues: 626 }
 
   tailor:
-    thresholds: { num-issues: 999 }   # too many issues detected: 1069 > 1000
+  - ignore: src/test/swift/com/sleekbyte/tailor/grammar/
+    thresholds: { num-issues: 807 }
+  - input:  src/test/swift/com/sleekbyte/tailor/grammar/
+    thresholds: { num-issues: 262 }
 
   uncrustify:
     auto-fix: true
